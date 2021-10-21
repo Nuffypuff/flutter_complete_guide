@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 //flutter framework is stored in a package somewhere else on the computer
 //we need to import the flutter framework to this file, so we can call classes from it.
-void main() {}
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
 //'extends' is our way of using inheritence.
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
     //the build method is a widget. And this the place where you can
     //design the UI of this screen, which is Stateless.
 
-    return MaterialApp();
+    return MaterialApp(home: Text("Hello"));
     //MaterialApp(special widget) that we're returning
   }
 }
